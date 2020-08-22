@@ -5,16 +5,18 @@
  * import EventEmitter from 'eventemitter3';
  * import PredefinedPromise from 'predefined-promise';
  *
- * const pp = new PredefinedPromise<number>();
- * const event = new EventEmitter<{
- *   someEvent: [number]
- * }>().on('someEvent', (val) => pp.finish(val));
+ * const asyncFunc = (): Promise<number> => {
+ *   const pp = new PredefinedPromise<number>();
+ *   const event = new EventEmitter<{
+ *     someEvent: [number]
+ *   }>().on('someEvent', (val) => pp.finish(val));
  *
- * const waiting = pp.wait();
+ *   const waiting = pp.wait();
  *
- * event.emit('someEvent', eventValue);
+ *   event.emit('someEvent', eventValue);
  *
- * const gottenValue = await waiting;
+ *   return await waiting;
+ * };
  */
 export default class PredefinedPromise<T> {
   private result?: { result: T };
