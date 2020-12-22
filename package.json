@@ -1,7 +1,7 @@
 {
   "name": "predefined-promise",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Reference `resolve` and `reject` before create Promise instance.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "directories": {
@@ -14,7 +14,12 @@
     "prepare:build": "tsc",
     "test": "jest"
   },
-  "author": "",
+  "author": "Sankaku <sankaku_dlt.45631@outlook.jp>",
+  "keywords": [
+    "async",
+    "await",
+    "promise"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.10",
