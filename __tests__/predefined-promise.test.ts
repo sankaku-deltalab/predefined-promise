@@ -1,5 +1,5 @@
 import EventEmitter from "eventemitter3";
-import PredefinedPromise from "../src";
+import { PredefinedPromise } from "../src";
 
 describe("PredefinedPromise", () => {
   it("can resolve before assigned to event emitter", async () => {

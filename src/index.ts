@@ -1,3 +1,1 @@
-import PredefinedPromise from './predefined-promise';
-
-export default PredefinedPromise;
+export * from "./predefined-promise";

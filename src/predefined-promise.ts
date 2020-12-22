@@ -23,7 +23,7 @@
  *   });
  * };
  */
-export default class PredefinedPromise<T> {
+export class PredefinedPromise<T> {
   private resolveValue?: { value: T };
   private rejectValue?: { reason: Error };
 
