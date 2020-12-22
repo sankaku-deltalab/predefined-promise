@@ -15,6 +15,7 @@
     "test": "jest"
   },
   "author": "Sankaku <sankaku_dlt.45631@outlook.jp>",
+  "homepage": "https://github.com/sankaku-deltalab/predefined-promise#readme",
   "keywords": [
     "async",
     "await",
